@@ -1,7 +1,7 @@
 import React from 'react';
 import Menu from './Components/Menu';
 import {BrowserRouter as Router,Switch,Route,Redirect} from "react-router-dom"
-import landingpage from './Components/landingpage';
+import home from './Components/home';
 import products from "./Components/products/products"
 import contact from './Components/contact';
 import notFound from './Components/notFound';
@@ -15,7 +15,7 @@ function App() {
         <Route path="/products" component={products}/>
         <Route path="/not-found" component={notFound}/>
         {/* generic route "/" */}
-        <Route path="/" exact component={landingpage}/>
+        <Route path="/" exact component={home}/>
         <Redirect to="/not-found" />
         </Switch>
       </div>
